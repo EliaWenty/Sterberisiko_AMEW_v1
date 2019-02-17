@@ -7,6 +7,7 @@ import javafx.scene.Scene;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 import javafx.scene.control.*;
+import at.spengergasse.*;
 
 public class GUI extends Application{
 
@@ -15,7 +16,7 @@ public class GUI extends Application{
     TextField eingabeDruckStaerke = new TextField();
     TextField eingabealter = new TextField();
     Label ergebnis = new Label();
-    //Logik logic = new Logik();
+    Logik logic = new Logik();
 
     @Override
     public void start(Stage primaryStage) throws Exception {
@@ -29,7 +30,7 @@ public class GUI extends Application{
                                       //und das ergebnis dem ergebnis zuweisen
                                       //Ich füg dann noch paar verschönerungssachen ein
 
-                                      /*
+
                                       try {
                                           ergebnis.setText(logic.SterberisikoMethode(
                                                   Integer.parseInt(eingabeHoehe.getText()),
@@ -39,7 +40,7 @@ public class GUI extends Application{
                                           System.out.println(e);
                                           ergebnis.setText("bitte Werte eingeben");
                                       }
-                                      */
+
                                   }
                               }
         );
