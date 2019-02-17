@@ -25,11 +25,6 @@ public class GUI extends Application{
         berechnen.setOnAction(new EventHandler<ActionEvent>(){
 
                                   public void handle(ActionEvent event){
-                                      //TODO
-                                      //Methode aufrufen ihr die werte der Textfielder zuweisen
-                                      //und das ergebnis dem ergebnis zuweisen
-                                      //Ich füg dann noch paar verschönerungssachen ein
-
 
                                       try {
                                           ergebnis.setText(logic.SterberisikoMethode(
