@@ -21,4 +21,11 @@ public class MyTest {
         assertEquals("Die Stärke Ihres Händedrucks entspricht genau dem Durchschnitt von Personen in Ihrem Alters und mit Ihrer Größe.", tester.SterberisikoMethode(180,35.0f,24));
     }
 
+    @Test
+    public void normalerBereichunterDurchschnitt1comma5(){
+        Logik tester = new Logik();
+
+        assertEquals("Die Stärke Ihres Händedrucks ist im normalen Bereich und liegt 1.5 unter dem Durchschnitt", tester.SterberisikoMethode(160,30.0f,21));
+    }
+
 }
